@@ -1,0 +1,14 @@
+- clean: ['~']
+
+- link:
+    ~/.zshrc: zshrc
+    ~/.emacs: emacs
+    ~/.emacs.d:
+        path: emacs.d/
+        create: true
+    ~/.config/i3:
+        path: config/i3/
+        create: true
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
